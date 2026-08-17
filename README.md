@@ -57,3 +57,21 @@ CRUD com interface gráfica.
 
 Este projeto faz parte do meu processo de aprendizado em
 Desenvolvimento de Sistemas e servirá como base para projetos futuros.
+
+## 📖 O que aprendi
+
+Durante este projeto pratiquei:
+
+- Programação orientada a objetos;
+- Criação e utilização de classes;
+- Getters e setters;
+- Listas e objetos;
+- JDBC;
+- Conexão com MySQL;
+- PreparedStatement;
+- ResultSet;
+- Operações CRUD;
+- Java Swing;
+- Eventos com ActionListener;
+- JTable e DefaultTableModel;
+- Separação entre interface e acesso ao banco de dados.
