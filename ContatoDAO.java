@@ -2,10 +2,12 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-
-import com.mysql.cj.protocol.Resultset;
+import java.util.List;
+import java.util.ArrayList;
 
 public class ContatoDAO {
+
+    
 
     public static void adicionarContato(String nome, String telefone, String email) {
         String sql = "INSERT INTO contatos (nome, telefone, email) VALUES (?, ?, ?)";
@@ -29,7 +31,9 @@ public class ContatoDAO {
 
     }
 
-    public static void listarContatos(){
+    public static List<Contato> listarContatos(){
+        
+        List<Contato> contatos = new ArrayList<>();
 
         String sql = "SELECT id, nome, telefone, email FROM contatos";
 
@@ -39,19 +43,33 @@ public class ContatoDAO {
         ResultSet resultado = stmt.executeQuery()) {
 
             while (resultado.next()) {
+
                 int id = resultado.getInt("id");
                 String nome = resultado.getString("nome");
                 String telefone = resultado.getString("telefone");
                 String email = resultado.getString("email");
 
-                System.out.println("ID: " + id + " | Nome: " + nome + " | Telefone: " + telefone + " | E-mail: " + email);
+                // System.out.println("ID: " + id + " | Nome: " + nome + " | Telefone: " + telefone + " | E-mail: " + email);
+
+                Contato contato = new Contato();
+
+                contato.setId(id);
+                contato.setNome(nome);
+                contato.setTelefone(telefone);
+                contato.setEmail(email);
+
+                contatos.add(contato);
+            
             }
+            
         
         } catch (SQLException e ) {
 
             System.out.println("Erro ao listar contatos");
             e.printStackTrace();
         }
+
+        return contatos;
     }
 
     public static void removerContatos(int id){
