@@ -1,6 +1,6 @@
 # 📱 Agenda de Contatos
 
-<img width="1368" height="772" alt="AddContato" src="https://github.com/user-attachments/assets/9c2e23af-7eea-477c-904d-528f15df0b90" />
+<img width="1109" height="666" alt="SelecionandoContato" src="https://github.com/user-attachments/assets/1582c31c-52df-42a7-8ed8-52fb0a62e650" />
 
 Projeto desenvolvido em Java com interface gráfica utilizando Swing,
 integrado ao banco de dados MySQL.
@@ -16,9 +16,17 @@ com interface gráfica e persistência de dados em MySQL.
 ### Funcionalidades
 
 - ✅ Adicionar contatos
+- <img width="1368" height="772" alt="AddContato" src="https://github.com/user-attachments/assets/9c2e23af-7eea-477c-904d-528f15df0b90" />
+
 - ✅ Listar contatos
+- <img width="1142" height="642" alt="MostrandoVariosContatos" src="https://github.com/user-attachments/assets/b47015fd-aaa4-426c-8f2a-4aecf68352c7" />
+
 - ✅ Atualizar contatos
+- <img width="1165" height="737" alt="AtualizandoContato" src="https://github.com/user-attachments/assets/d356e43f-68a5-4dcd-b08a-30b52fecbb30" />
+
 - ✅ Excluir contatos
+- <img width="1172" height="704" alt="RemovendoContato" src="https://github.com/user-attachments/assets/72e2890b-6e03-4e40-8f1a-7f49dba74266" />
+
 - ✅ Interface gráfica com Java Swing
 - ✅ Persistência de dados utilizando MySQL
 - ✅ JTable para exibição dos contatos
