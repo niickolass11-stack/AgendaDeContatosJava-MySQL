@@ -1,5 +1,7 @@
 # 📱 Agenda de Contatos
 
+<img width="1368" height="772" alt="AddContato" src="https://github.com/user-attachments/assets/9c2e23af-7eea-477c-904d-528f15df0b90" />
+
 Projeto desenvolvido em Java com interface gráfica utilizando Swing,
 integrado ao banco de dados MySQL.
 
